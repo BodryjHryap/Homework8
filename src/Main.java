@@ -18,7 +18,7 @@ public class Main {
         for (int i = 0; i < integerArray.length; i++) {
             if (i == integerArray.length - 1) {
                 System.out.print(integerArray[i]);
-            } else if (i < integerArray.length - 1) {
+            } else {
                 System.out.print(integerArray[i] + ", ");
             }
         }
@@ -26,7 +26,7 @@ public class Main {
         for (int i = integerArray.length - 1; i >= 0; i--) {
             if (i == 0) {
                 System.out.print(integerArray[i]);
-            } else if (i < integerArray.length) {
+            } else {
                 System.out.print(integerArray[i] + ", ");
             }
         }
@@ -36,7 +36,7 @@ public class Main {
         for (int i = 0; i < floatArray.length; i++) {
             if (i == floatArray.length - 1) {
                 System.out.print(floatArray[i]);
-            } else if (i < floatArray.length - 1) {
+            } else {
                 System.out.print(floatArray[i] + ", ");
             }
         }
@@ -44,7 +44,7 @@ public class Main {
         for (int i = floatArray.length - 1; i >= 0; i--) {
             if (i == 0) {
                 System.out.print(floatArray[i]);
-            } else if (i < floatArray.length) {
+            } else {
                 System.out.print(floatArray[i] + ", ");
             }
         }
@@ -54,7 +54,7 @@ public class Main {
         for (int i = 0; i < arbitrarilyArray.length; i++) {
             if (i == arbitrarilyArray.length - 1) {
                 System.out.print(arbitrarilyArray[i]);
-            } else if (i < arbitrarilyArray.length - 1) {
+            } else {
                 System.out.print(arbitrarilyArray[i] + ", ");
             }
         }
@@ -62,13 +62,13 @@ public class Main {
         for (int i = arbitrarilyArray.length - 1; i >= 0; i--) {
             if (i == 0) {
                 System.out.print(arbitrarilyArray[i]);
-            } else if (i < arbitrarilyArray.length) {
+            } else {
                 System.out.print(arbitrarilyArray[i] + ", ");
             }
         }
     }
     public static void task4(){
-        System.out.println("Задание 4");
+        System.out.println("\nЗадание 4");
         int [] integerArray = new int[3];
         integerArray[0] = 1;
         integerArray[1] = 2;
@@ -78,7 +78,7 @@ public class Main {
         System.out.println("Целочисленный четный массив:");
         for (int i = 0; i < integerArray.length; i++) {
             if (integerArray[i] % 2 != 0) {
-                integerArray[i] += 1;
+                integerArray[i]++;
             }
         }
         System.out.println(Arrays.toString(integerArray));
